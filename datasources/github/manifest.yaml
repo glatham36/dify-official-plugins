@@ -16,7 +16,7 @@ plugins:
   datasources:
     - provider/github.yaml
 meta:
-  version: 0.3.1
+  version: 0.0.2
   arch:
     - amd64
     - arm64
