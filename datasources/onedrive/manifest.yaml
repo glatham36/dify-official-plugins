@@ -16,7 +16,7 @@ plugins:
   datasources:
     - provider/onedrive.yaml
 meta:
-  version: 0.0.1
+  version: 0.1.4
   arch:
     - amd64
     - arm64

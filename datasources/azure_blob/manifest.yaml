@@ -16,7 +16,7 @@ plugins:
   datasources:
     - provider/azure_blob.yaml
 meta:
-  version: 0.2.0
+  version: 0.2.4
   arch:
     - amd64
     - arm64
