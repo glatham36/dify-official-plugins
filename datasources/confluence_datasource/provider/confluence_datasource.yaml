@@ -61,7 +61,6 @@ oauth_schema:
         en_US: Workspace Icon
 
 provider_type: online_document
-credentials_schema:
 
 datasources:
   - datasources/confluence_datasource.yaml
