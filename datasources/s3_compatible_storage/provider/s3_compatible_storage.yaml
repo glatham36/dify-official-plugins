@@ -1,0 +1,67 @@
+identity:
+  author: langgenius
+  name: s3_compatible_storage
+  label:
+    en_US: S3 Compatible Storage
+    zh_Hans: S3 兼容存储
+  description:
+    en_US: S3 Compatible Storage Datasource (MinIO, etc.)
+    zh_Hans: S3 兼容存储数据源 (MinIO 等)
+  icon: _assets/icon.svg
+provider_type: online_drive
+help:
+  title:
+    en_US: Configure your S3 compatible storage credentials
+    zh_Hans: 配置您的 S3 兼容存储凭证
+  url:
+    en_US: https://docs.dify.ai/
+credentials_schema:
+  - name: endpoint_url
+    type: text-input
+    required: true
+    label:
+      en_US: Endpoint URL
+      zh_Hans: 端点 URL
+    placeholder:
+      en_US: Enter your S3 compatible storage endpoint URL (e.g., http://localhost:9000)
+      zh_Hans: 输入您的 S3 兼容存储端点 URL（例如：http://localhost:9000）
+  - name: access_key_id
+    type: secret-input
+    required: true
+    label:
+      en_US: Access Key ID
+      zh_Hans: 访问密钥 ID
+    placeholder:
+      en_US: Enter your access key ID
+      zh_Hans: 输入您的访问密钥 ID
+  - name: secret_access_key
+    type: secret-input
+    required: true
+    label:
+      en_US: Secret Access Key
+      zh_Hans: 密钥
+    placeholder:
+      en_US: Enter your secret access key
+      zh_Hans: 输入您的密钥
+  - name: region_name
+    type: text-input
+    required: false
+    label:
+      en_US: Region Name (Optional)
+      zh_Hans: 区域名称（可选）
+    placeholder:
+      en_US: "Enter region name (default: us-east-1)"
+      zh_Hans: "输入区域名称（默认：us-east-1）"
+  - name: use_ssl
+    type: boolean
+    required: false
+    label:
+      en_US: Use SSL
+      zh_Hans: 使用 SSL
+    default: false
+
+datasources:
+  - datasources/s3_compatible_storage.yaml
+extra:
+  python:
+    source: provider/s3_compatible_storage.py

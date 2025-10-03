@@ -1,0 +1,20 @@
+identity:
+  name: s3_compatible_storage
+  author: langgenius
+  label:
+    en_US: S3 Compatible Storage
+    zh_Hans: S3 兼容存储
+description:
+  en_US: Get files from your S3 compatible storage bucket (MinIO, etc.)
+  zh_Hans: 从您的 S3 兼容存储桶中获取文件 (MinIO 等)
+
+parameters:
+
+output_schema:
+    type: object
+    properties:
+      file:
+        $ref: "https://dify.ai/schemas/v1/file.json"
+extra:
+  python:
+    source: datasources/s3_compatible_storage.py
