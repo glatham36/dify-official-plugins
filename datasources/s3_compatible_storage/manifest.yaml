@@ -8,7 +8,7 @@ label:
 description:
   en_US: S3 Compatible Storage Datasource (MinIO, etc.)
   zh_Hans: S3 兼容存储数据源 (MinIO 等)
-icon: _assets/icon.svg
+icon: icon.svg
 resource:
   memory: 268435456
   permission: {}
